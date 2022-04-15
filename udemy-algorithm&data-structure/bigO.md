@@ -4,7 +4,7 @@
 
 #### BigO notation이 필요한 이유
 
--> 프로그램의 실행 시간을 일일이 테스트할 수 없다.
+-> 프로그램의 실행 시간을 일일이 테스트 할 수 없다.
 
 <br>
 
@@ -22,13 +22,13 @@
 
 ### Big O 시간복잡도
 
-- linear O(n) = n
-- quadratic O(n) = n<sup>2</sup>
-- constant O(n) = 1
+- linear O(N) = N
+- quadratic O(N) = N<sup>2</sup>
+- constant O(N) = 1
 
 ### Big O notation의 상수가 붙어 있으면 생략 가능하다.
 
-- O(2n) (x) -> O(n)
+- O(2N) (x) -> O(N)
 - O(500) (x) -> O(1)
 
 <br>
@@ -37,11 +37,11 @@
 
 - Big O notation에서 가장 큰 시간복잡도 외에는 생략한다.
 
-  - O(n<sup>2</sup> + 30n + 100) -> O(n<sup>2</sup>)
+  - O(N<sup>2</sup> + 30N + 100) -> O(N<sup>2</sup>)
 
   <br>
 
-- n의 크기 증가에 따른 함수 실행 시간의 그래프에 따라 BigO notaion이 결정된다.
+- n의 크기 증가에 따른 함수 실행 시간의 그래프에 따라 Big O notaion이 결정된다.
 
   <br>
 
@@ -51,11 +51,11 @@
 
   <br>
 
-- strings require O(n)
+- strings require O(N)
 
   <br>
 
-- Reference types are generally O(n), wehre n is the length(for arrays) or the numbers of key(for objects)
+- Reference types are generally O(N), wehre n is the length(for arrays) or the numbers of key(for objects)
 
   <br>
 
@@ -71,8 +71,8 @@
   <br>
 
 - log의 시간복잡도 구분
-  - O(log<sub>n</sub>)
-  - O(nlog<sub>n</sub>)
+  - O(log<sub>N</sub>)
+  - O(N log<sub>N</sub>)
 
 <br>
 
@@ -90,4 +90,62 @@
 
 ### 시간복잡도의 빠르기 (좌측부터 가장 빠름)
 
-O(1) > O(log<sub>n</sub>) > O(n) > O(nlog<sub>n</sub>) > O(n<sup>2</sup>)
+O(1) > O(log<sub>N</sub>) > O(N) > O(N log<sub>N</sub>) > O(N<sup>2</sup>)
+
+<br>
+
+# Section 3: 배열과 오브젝트의 성능 평가
+
+### 객체
+
+- Big O of Objects
+
+  - Insertion - O(1)
+  - Removal - O(1)
+  - Searching - O(N)
+  - Access - O(1)
+
+  <br>
+
+- Big O of Object Method - Object는 n개의 key와 value를 가진다.
+  - Object.keys - O(n)
+  - Object.values - O(n)
+  - Object.entries - O(n)
+  - Object.hasOwnProperty - O(1)
+
+<br>
+
+### 배열 - 선형 리스트
+
+- Big O of Arrays
+
+  - Insertion - It depends on method
+  - Removal - It depends on method
+    -> 배열의 요소 추가, 삭제 할 때 pop(), push() 메소드를 사용하면 배열의 가장 끝 인덱스에 요소를 추가하거나 삭제하기때문에 O(1)이지만
+    unshift(), shift() 메소드를 사용한다면 배열 가장 앞 인덱스에 새로운 요소를 추가 또는 삭제하기 때문에 O(N)의 시간복잡도를 가지게 된다.
+
+  - Searching - O(N)
+    -> 요소를 검색할 때에는 최악의 경우 N번째 요소까지 찾아봐야 하므로 시간복잡도 O(N)을 가진다.
+
+  - Access - O(1)
+    -> 요소를 접근할 때에는 특정 인덱스를 참조하므로 상수 시간복잡도를 가진다.
+
+<br>
+
+- Big O of Arrays Operation
+  - push - O(1)
+  - pop - O(1)
+  - shift - O(N)
+  - unshift - O(N)
+  - concat - O(N)
+    -> 두 배열을 합칠 때 시간복잡도 O(N + M)을 가지지만 Big O notation 시간복잡도 규칙에 의해
+    상수 M을 무시해준다.
+  - slice - O(N)
+    -> 배열의 특정 범위까지의 요소만 자르기 때문에 O(N)을 가진다.
+  - splice - O(N)
+    -> slice와 다르게 배열을 잘라 요소를 추가하지만 맥락은 같다.
+  - sort - O(n \* log n)
+    -> 단순히 N번쩨 요소까지 훑는 것이 아니라 두 요소를 비교하고 정렬하므로 가장 늦은 시간복잡도인 (N \* log N)을 가진다.
+  - forEach / map / filter / reduce / etc - O(N)
+
+#### 요약: 객체는 정렬되어 있지 않은 데이터의 나열이며 데이터의 접근, 생성, 삭제하는 속도가 빠르다. 배열의 경우에는 데이터의 접근은 빠르나 특정 경우를 제외하고(push(), pop()) 대부분의 데이터 작업 속도가 느리다.
