@@ -5,16 +5,19 @@
 #### BigO notation이 필요한 이유
 
 -> 프로그램의 실행 시간을 일일이 테스트할 수 없다.
+
 <br>
 
 #### 연산갯수를 세 보자.
 
 -> 연산의 개수를 세는 것은 여간 귀찮은 일이 아니다. 단순 상수가 아닌 반복문의 경우 반복횟수에 따라 연산의 수가 달라지기 때문이다.
+
 <br>
 
 # Section 2: Big O notation
 
-Big O notation: 입력의 크기에 따른 함수의 실행 시간의 관계
+### Big O notation: 입력의 크기에 따른 함수의 실행 시간의 관계
+
 <br>
 
 ### Big O 시간복잡도
@@ -35,29 +38,36 @@ Big O notation: 입력의 크기에 따른 함수의 실행 시간의 관계
 - Big O notation에서 가장 큰 시간복잡도 외에는 생략한다.
 
   - O(n<sup>2</sup> + 30n + 100) -> O(n<sup>2</sup>)
-    <br>
+
+  <br>
 
 - n의 크기 증가에 따른 함수 실행 시간의 그래프에 따라 BigO notaion이 결정된다.
+
   <br>
 
 ### Big O 공간복잡도
 
 - booleans, numbers, undefiend, null -> O(1)상수 공간 복잡도
+
   <br>
 
 - strings require O(n)
+
   <br>
 
 - Reference types are generally O(n), wehre n is the length(for arrays) or the numbers of key(for objects)
+
   <br>
 
 ### Logarithm
 
 - log<sub>2</sub> 8 = 3 -> 2<sup>3</sup> = 8
+
   <br>
 
 - log의 시간복잡도에서 상수는 생략 가능하다.
   log<sub>2</sub> -> log
+
   <br>
 
 - log의 시간복잡도 구분
