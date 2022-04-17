@@ -14,6 +14,14 @@
 
 <br>
 
+### 참고 강의
+
+- #### Udemy - JS algorithm & data structuer master class
+  - <a href='./udemy-algorithm&data-structure/bigO.md'>Big O notation</a>
+  - <a href='./udemy-algorithm&data-structure/psPatterns.md'>Problem Solving Patterns</a>
+
+<br>
+
 ### 문제출처
 
 - #### 프로그래머스
