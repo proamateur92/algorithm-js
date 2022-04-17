@@ -169,3 +169,163 @@ function sumZero(arr) {
 // Time Complexity O(N)
 // Space Complexity O(1)
 ```
+
+<br>
+
+##### 문제: 숫자로 이루어진 배열이 주어지고 배열의 요소 중 unique한 값만 추려 갯수를 반환하라.
+
+<br>
+
+나의 코드
+
+```
+function countUniqueValue(arr) {
+    arr.sort();
+    const result = [];
+
+    if(arr.length !== 0) {
+        result.push(arr[0]);
+    }
+
+    for(let i = 0; i < arr.length - 1; i++) {
+        if(arr[i] === arr[i+1]) {
+            continue;
+        } else {
+            result.push(arr[i+1]);
+        }
+
+    }
+
+    return result.length;
+}
+
+// Time Complexity O(N)
+// Space Complexity O(1)
+```
+
+<br>
+
+해설 코드
+
+```
+function countUniqueValue(arr) {
+    arr.sort();
+    let i = 0;
+
+    if(arr.length !== 0) {
+        return 0;
+    }
+
+    for(let j = 1; j < arr.length - 1; j++) {
+        if(arr[i] !== arr[i+1]) {
+            i++;
+            arr[i] = arr[j];
+        }
+    }
+
+    return i + 1;
+}
+
+// Time Complexity O(N)
+// Space Complexity O(1)
+```
+
+-> 나의 코드와 해설 코드가 비슷한 맥락을 가졌다.
+기본 메커니즘이나 시간복잡도, 공간복잡도가 일치했기 때문이다.
+
+<br>
+
+##### 문제: 숫자로 이루어진 배열과 숫자를 입력 받는다. 두번째 인자의 숫자만큼 배열의 인접한 요소의 합의 최대값을 구하라.
+
+<br>
+
+나의 코드
+
+```
+function maxSubArraySum(arr, num) {
+    if(num > arr.length) {
+        return null;
+    }
+    let max = -Infinity;
+    for(let i = 0; i < arr.length - num + 1; i++) {
+        let temp = 0;
+        for(let j = i; j < i + num; j++) {
+            temp += arr[j];
+        }
+        if(temp > max) {
+            max = temp;
+        }
+    }
+    return max;
+}
+maxSubArraySum([9,1,7,3,2], 2);
+
+// Time Complexity: O(N^2)
+```
+
+<br>
+
+해설코드
+
+```
+function maxSubArraySum(arr, num) {
+    let maxSum = 0;
+    let tempSum = 0;
+    if(num > arr.length) {
+        return null;
+    }
+
+    for(let i = 0; i < num; i++) {
+        maxSum += arr[i];
+    }
+    tempSum = maxSum;
+    for(let i = num; i < arr.length; i++) {
+        tempSum = tempSum - arr[i - num] + arr[i];
+        maxSum = Math.max(maxSum, tempSum);
+    }
+
+    return maxSum;
+}
+
+maxSubArraySum([3,1,1,2], 4);
+
+// Time Complexity O(N)
+```
+
+<br>
+
+### Divide and Conqure
+
+<br>
+
+##### 문제: 정렬된 숫자 배열와 숫자를 입력 받아 주어진 숫자와 일치하는 배열의 요소를 반환한다. 일치하는 요소가 없으면 -1을 리턴한다.
+
+<br>
+
+해설 코드
+
+```
+function search(array, val) {
+    array.sort();
+    let min = 0;
+    let max = array.length - 1;
+
+    while(min <= max) {
+        let mid = Math.floor((max + min) / 2);
+        let currentElement = array[mid];
+
+        if(currentElement < val) {
+            min++;
+        } else if(currentElement > val) {
+            max--;
+        } else {
+            return mid;
+        }
+    }
+    return -1;
+}
+
+const result = search([1,7,4,5,2],7);
+
+// Time Complexity Log(N) - Binary search
+```
