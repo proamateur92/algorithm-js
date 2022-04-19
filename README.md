@@ -19,6 +19,10 @@
 - #### Udemy - JS algorithm & data structuer master class
   - <a href='./udemy-algorithm&data-structure/bigO.md'>Big O notation</a>
   - <a href='./udemy-algorithm&data-structure/psPatterns.md'>Problem Solving Patterns</a>
+    - <a href='./udemy-algorithm&data-structure/sameFrequency-my-answer.js'>문제3. Frequence Counter - SameFrequencey</a>
+    - <a href='./udemy-algorithm&data-structure/areThereDuplicates-my-answer.js'>문제4. Frequence Counter / Multiple Pointer - areThereDuplicates</a>
+    - <a href='./udemy-algorithm&data-structure/averagePair-my-answer.js'>문제5. Multiple Pointer - AveragePair</a>
+    - <a href='./udemy-algorithm&data-structure/isSubsequence-my-answer.js'>문제6. Multiple Pointer - isSubsequence</a>
 
 <br>
 
