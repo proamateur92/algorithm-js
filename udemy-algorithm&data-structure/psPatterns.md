@@ -329,3 +329,14 @@ const result = search([1,7,4,5,2],7);
 
 // Time Complexity Log(N) - Binary search
 ```
+
+<br>
+
+### 실전 문제 풀이
+
+<br>
+
+- <a href='./sameFrequency-my-answer.js'>문제3. Frequence Counter - SameFrequencey</a>
+- <a href='./areThereDuplicates-my-answer.js'>문제4. Frequence Counter / Multiple Pointer - areThereDuplicates</a>
+- <a href='./averagePair-my-answer.js'>문제5. Multiple Pointer - AveragePair</a>
+- <a href='./isSubsequence-my-answer.js'>문제6. Multiple Pointer - isSubsequence</a>

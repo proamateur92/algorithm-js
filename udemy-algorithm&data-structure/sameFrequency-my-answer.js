@@ -1,7 +1,7 @@
 // 두 숫자의 모든 자릿수에 사용된 숫자의 갯수가 같은지 판별하라.
 
+// 나의 답안
 function sameFrequency(num1, num2) {
-  // good luck. Add any arguments you deem necessary.
   num1 = num1 + '';
   num2 = num2 + '';
 
