@@ -37,6 +37,7 @@
     - <a href='./udemy-algorithm&data-structure/recursion/prac14_fib.js'>문제14. Recursion - fibo</a>
     - <a href='./udemy-algorithm&data-structure/recursion/prac15_reverse.js'><보너스> 문제15. Recursion - reverse</a>
     - <a href='./udemy-algorithm&data-structure/recursion/prac16_isPalindrome.js'><보너스> 문제16. Recursion - isPalindrome</a>
+    - <a href='./udemy-algorithm&data-structure/recursion/prac17_someRecursive.js'><보너스> 문제17. Recursion - someRecursive</a>
 
 ### 문제출처
 
