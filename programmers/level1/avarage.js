@@ -12,5 +12,5 @@ const result =
     console.log('ele: ', ele);
     console.log('index: ', index);
     return init + ele;
-  }) / arr.length;
+  }, 0) / arr.length;
 console.log(result);
