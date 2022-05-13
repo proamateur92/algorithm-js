@@ -51,7 +51,7 @@ a# 자바스크립트 언어를 활용하여 알고리즘 문제를 풉니다.
     - <a href='./programmers/level1/stringTointeger.js'>문자열을 정수로 바꾸기</a>
     - <a href='./programmers/level1/nonumSum.js'>없는 숫자 더하기</a>
     - <a href='./programmers/level1/sumNegaPosi.js'>음양 더하기</a>
-    - <a href='./programmers/level1/revarage.js'>평균 구하기</a>
+    - <a href='./programmers/level1/avarage.js'>평균 구하기</a>
 
 - #### 백준
 - #### JavaScript 100제
