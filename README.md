@@ -44,6 +44,7 @@ a# 자바스크립트 언어를 활용하여 알고리즘 문제를 풉니다.
 - #### 프로그래머스
 
   - #### level1
+
     - <a href='./programmers/level1/printRectangleStar.js'>직사각형 별찍기</a>
     - <a href='./programmers/level1/evenOdd.js'>짝수와 홀수</a>
     - <a href='./programmers/level1/bringMiddleChar.js'>가운데 글자 가져오기</a>
@@ -60,6 +61,24 @@ a# 자바스크립트 언어를 활용하여 알고리즘 문제를 풉니다.
     - <a href='./programmers/level1/dividePerfect.js'>나누어 떨어지는 숫자 배열</a>
     - <a href='./programmers/level1/innerProduct.js'>내적</a>
     - <a href='./programmers/level1/p&yNumInString.js'>문자열 내 p와 y의 개수</a>
+    - <a href='./programmers/level1/handlingString.js'>문자열 다루기 기본</a>
+    - <a href='./programmers/level1/findKim.js'>서울에서 김서방 찾기</a>
+    - <a href='./programmers/level1/subak.js'>수박수박수박수박수박수?</a>
+    - <a href='./programmers/level1/notFinishRunning.js'>완주하지 못한 선수</a>
+    - <a href='./programmers/level1/makeWeiredSentence.js'>이상한 문자 만들기</a>
+    - <a href='./programmers/level1/sumDigit.js'>자릿수 더하기</a>
+    - <a href='./programmers/level1/makeArrReverseInt.js'>자연수 뒤집어 배열로 만들기</a>
+    - <a href='./programmers/level1/descendingInt.js'>정수 내림차순으로 배치하기</a>
+    - <a href='./programmers/level1/sqrt.js'>정수 제곱근 판별</a>
+    - <a href='./programmers/level1/removeLeastNum.js'>제일 작은 수 제거하기</a>
+    - <a href='./programmers/level1/collatz.js'>콜라츠 추측</a>
+    - <a href='./programmers/level1/harshad.js'>하샤드 수</a>
+    - <a href='./programmers/level1/reverse3.js'>3진법 뒤집기</a>
+
+    <!-- 나의 담당 문제 -->
+
+    - <a href='./programmers/level1/twoPickSum.js'>두 개 뽑아서 더하기</a>
+    - <a href='./programmers/level1/descendingString.js'>문자열 내림차순으로 배치하기</a>
 
 - #### 백준
 - #### JavaScript 100제
