@@ -74,11 +74,19 @@ a# 자바스크립트 언어를 활용하여 알고리즘 문제를 풉니다.
     - <a href='./programmers/level1/collatz.js'>콜라츠 추측</a>
     - <a href='./programmers/level1/harshad.js'>하샤드 수</a>
     - <a href='./programmers/level1/reverse3.js'>3진법 뒤집기</a>
-
-    <!-- 나의 담당 문제 -->
-
+    - <a href='./programmers/level1/leastReactangle.js'>최소직사각형</a>
+    - <a href='./programmers/level1/hateSameNum.js'>같은 숫자는 싫어</a>
     - <a href='./programmers/level1/twoPickSum.js'>두 개 뽑아서 더하기</a>
+    - <a href='./programmers/level1/lottoTopAndWorstRank.js'>로또의 최고 순위와 최저 순위</a>
+    - <a href='./programmers/level1/exam.js'>모의고사</a>
+    - <a href='./programmers/level1/mySortString.js'>문자열 내 마음대로 정렬하기</a>
     - <a href='./programmers/level1/descendingString.js'>문자열 내림차순으로 배치하기</a>
+    - <a style='color: red;' href='./programmers/level1/makePrimeNumber.js'>소수 만들기</a>
+    - <a href='./programmers/level1/numStringAndEngWord.js'>숫자 문자열과 영단어</a>
+    - <a href='./programmers/level1/caesarCipher.js'>시저 암호</a>
+    - <a href='./programmers/level1/recommendNewId.js'>신규 아이디 추천</a>
+    - <a href='./programmers/level1/findNewIsland.js'>몇시간 했더라?</a>
+    - <a href='./programmers/level1/howMuchIStudy.js'>신대륙 발견</a>
 
 - #### 백준
 - #### JavaScript 100제
